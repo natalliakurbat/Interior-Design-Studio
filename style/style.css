@@ -4,4 +4,42 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 0.75rem;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+header {
+    background-color: rgba(130, 130, 130, 0.6);
+}
+
+.beginning {
+    background-image: url('../images/studio-background.png');
+    background-size: cover;
+    color: #FFF;
+}
+
+.about-studio,
+.rates {
+    background-color: #F0F0F0;
+}
+
+.footer {
+    background-color: #434343;
+    color: #FFF;
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
@@ -11,19 +12,19 @@
 </head>
 
 <body>
-    <div>
+    <div class="beginning">
         <header>
             <div>
                 <a>sphere</a>
                 <nav>
-                    <a>услуги</a>
-                    <a>цены</a>
-                    <a>контакты</a>
+                    <a href="#services">услуги</a>
+                    <a href="#rates">цены</a>
+                    <a href="#footer">контакты</a>
                 </nav>
             </div>
         </header>
 
-        <section>
+        <section class="banner">
             <h1>Студия дизайна интерьера</h1>
             <p>Дизайн квартир и общественных пространств в современном стиле</p>
             <a>Заказать проект</a>
@@ -31,7 +32,7 @@
     </div>
 
     <main>
-        <section>
+        <section class="services" id="services">
             <h2>Наши услуги</h2>
             <p>Мы создаем функциональные дизайнерские проекты от маленьких до больших пространств</p>
 
@@ -54,13 +55,13 @@
             </article>
         </section>
 
-        <section>
+        <section class="about-studio">
             <h2>О нашей студии</h2>
             <img src="images/team.png" alt="Наша команда">
             <p>Sphere — это команда дизайнеров интерьера, мы работаем вместе уже более 5 лет. Мы знаем все нюансы дизайна и строительства и создаем функциональное пространство для наших клиентов.</p>
         </section>
 
-        <section>
+        <section class="portfolio">
             <h2>Портфолио</h2>
             <p>Фрагменты наших избранных проектов</p>
             <div>
@@ -72,7 +73,7 @@
             <a href="">Смотреть все проекты</a>
         </section>
 
-        <section>
+        <section class="rates" id="rates">
             <h2>Наши тарифы</h2>
             <p>Выберите тариф, который подходит вам, свяжитесь с нами и закажите дизайн-проект.</p>
             <article>
@@ -111,7 +112,7 @@
             </article>
         </section>
 
-        <section>
+        <section class="work">
             <h2>Как мы работаем</h2>
             <article>
                 <img src="images/sketch.png" alt="эскиз">
@@ -144,7 +145,7 @@
             <button>Перезвоните мне</button>
         </section>
     </main>
-    <footer>
+    <footer class="footer" id="footer">
         <a>sphere</a>
         <div>
             <a href=""></a>
