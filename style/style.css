@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 24px;
 }
@@ -7,8 +13,15 @@ body {
     text-align: center;
 }
 
+.wrapper {
+    max-width: 1183px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
 h1 {
     font-size: 3rem;
+    line-height: 98.05px;
 }
 
 h2 {
@@ -19,19 +32,91 @@ h3 {
     font-size: 0.75rem;
 }
 
+p {
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
     color: #FFF;
 }
 
-header {
-    background-color: rgba(130, 130, 130, 0.6);
-}
+
+/*Главный экран*/
 
 .beginning {
     background-image: url('../images/studio-background.png');
     background-size: cover;
     color: #FFF;
+}
+
+header {
+    background-color: rgba(130, 130, 130, 0.6);
+    vertical-align: middle;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.33rem;
+    font-weight: 700;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.menu-items {
+    font-size: 0.833rem;
+    text-transform: uppercase;
+    line-height: 27.24px;
+}
+
+.menu-items a:not(:first-child)::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: #FFF;
+    margin: 0 45px;
+    vertical-align: middle;
+}
+
+.banner {
+    padding: 340px 0 40px;
+    ;
+}
+
+.banner p {
+    font-size: 0.92rem;
+    line-height: 33.28px;
+}
+
+.button {
+    font-size: 0.67rem;
+    display: block;
+    width: 246px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #FFBE49;
+    background-color: #FFBE49;
+    border-radius: 30px;
+    margin: 50px auto 279px;
+}
+
+.arrow::after {
+    content: "";
+    background-image: url("../images/arrow.svg");
+    display: block;
+    width: 57px;
+    height: 20px;
+    margin: 0 auto;
 }
 
 .about-studio,
@@ -42,4 +127,5 @@ header {
 .footer {
     background-color: #434343;
     color: #FFF;
+    font-size: 1rem;
 }
